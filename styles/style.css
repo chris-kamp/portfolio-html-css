@@ -74,6 +74,23 @@ a {
   border-left: none;
 }
 
+/* Main */
+
+main {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.content-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 2;
+}
+
 /* Content blocks */
 
 .content-block {
