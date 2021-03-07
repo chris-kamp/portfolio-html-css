@@ -95,6 +95,21 @@ main {
 
 .content-block {
   background-color: #343f41;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+#intro-block {
+  line-height: 2;
+}
+
+#intro-block ul {
+  padding-left: 3rem;
+}
+
+.overflow {
+  white-space: nowrap;
 }
 
 /* Footer */
