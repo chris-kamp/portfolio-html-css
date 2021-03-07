@@ -1,3 +1,5 @@
+/* General styles */
+
 * {
   box-sizing: border-box;
   color: rgb(212, 212, 212);
@@ -7,6 +9,9 @@
 
 body {
   background-color: #0d0d0d;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 10vh 1fr 4rem;
 }
 
 em {
@@ -16,22 +21,15 @@ em {
 
 a {
   font-weight: bold;
-}
-
-.content-block {
-  background-color: #343f41;
-}
-
-.page-header {
+  /* Allows vertical centering of images wrapped in <a> tags */
   display: flex;
-  height: 10vh;
+  align-items: center;
 }
 
-.site-nav {
+.center-flex {
   display: flex;
-  width: 100%;
-  height: 100%;
-  border-bottom: 1px solid yellow;
+  justify-content: center;
+  align-items: center;
 }
 
 .link-list {
@@ -41,6 +39,19 @@ a {
   justify-content: space-around;
   align-items: center;
   height: 100%;
+}
+
+/* Header */
+
+.page-header {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid yellow;
 }
 
 .site-nav li {
@@ -63,15 +74,38 @@ a {
   border-left: none;
 }
 
+/* Content blocks */
+
+.content-block {
+  background-color: #343f41;
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid rgb(212, 212, 212);
+  display: grid;
+  grid-auto-rows: 1fr 2fr;
+  grid-template-areas:
+    "copyright copyright copyright"
+    ". links .";
+}
+
+#copyright {
+  grid-area: copyright;
+  display: flex;
+  padding-top: 0.3rem;
+}
+
+#pro-links {
+  grid-area: links;
+}
+
+/* Media queries */
+
 /* Fits main site nav text on screens >= 320px width (iPhone 5) */
 @media only screen and (max-width: 360px) {
   .site-nav {
     font-size: 0.85rem;
   }
 }
-
-/* .pro-links {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-} */
