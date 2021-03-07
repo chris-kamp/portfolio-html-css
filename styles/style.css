@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  color: rgb(212, 212, 212);
+}
+
+body {
+  background-color: #0d0d0d;
+}
+
+em {
+  font-style: normal;
+  color: yellow;
+}
+
+a {
+  font-weight: bold;
+}
+
+.content-block {
+  background-color: #343f41;
+}
