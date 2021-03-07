@@ -22,7 +22,7 @@ em {
 a {
   font-weight: bold;
   /* Allows vertical centering of images wrapped in <a> tags */
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
