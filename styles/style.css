@@ -27,6 +27,32 @@ a {
   justify-content: center;
 }
 
+.content-block {
+  background-color: #343f41;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.content-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.content-para {
+  line-height: 1.2;
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title {
+  color: yellow;
+  font-size: 4rem;
+}
+
 .center-flex {
   display: flex;
   justify-content: center;
@@ -48,7 +74,7 @@ a {
 
 /* Header */
 
-.page-header {
+.site-header {
   display: flex;
 }
 
@@ -151,6 +177,7 @@ button:active {
 
 footer {
   border-top: 1px solid rgb(212, 212, 212);
+  margin-top: 2rem;
   display: grid;
   grid-auto-rows: 1fr 2fr;
   grid-template-areas:
@@ -170,6 +197,8 @@ footer {
 
 /* Media queries */
 
+/* Font-size breakpoints */
+
 /* Fits main site nav text on screens >= 320px width (iPhone 5) */
 @media only screen and (max-width: 360px) {
   #site-nav {
@@ -177,7 +206,7 @@ footer {
   }
 }
 
-/* Exclude mobile */
+/* Larger than mobile */
 
 @media (min-width: 481px) {
   #m-nav,
@@ -189,7 +218,7 @@ footer {
   }
 }
 
-/* Mobile only */
+/* Mobile and smaller */
 
 @media (max-width: 480px) {
   #site-nav {
