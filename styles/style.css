@@ -141,47 +141,6 @@ button:active {
   border-left: none;
 }
 
-/* Homepage content */
-
-#home-main {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-}
-
-#home-content-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 80vw;
-  text-align: center;
-  margin: 0 auto;
-  line-height: 2;
-}
-
-#home-main .content-block {
-  background-color: #343f41;
-  padding: 5%;
-  display: flex;
-  justify-content: center;
-}
-
-#intro-block {
-  line-height: 2;
-}
-
-#intro-block ul {
-  padding-left: 3rem;
-}
-
-/* About page content */
-
-#about-main {
-  width: 97%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 15vh 1fr;
-}
-
 /* Footer */
 
 footer {

@@ -1,0 +1,6 @@
+#about-main {
+  width: 97%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 15vh 1fr;
+}
