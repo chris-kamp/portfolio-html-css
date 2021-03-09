@@ -112,6 +112,9 @@ a {
   height: 26vw;
   border-radius: 50%;
   background-color: yellow;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button,
