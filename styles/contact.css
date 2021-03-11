@@ -1,0 +1,74 @@
+/* Prevents labels from wrapping */
+label {
+  min-width: max-content;
+}
+
+.text-input {
+  max-width: 25em;
+}
+
+#contact-main {
+  margin: 0 auto;
+}
+
+#contact-container {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+}
+
+#contact-form {
+  color: black;
+  display: grid;
+  grid-template-areas:
+    "name-label name-input"
+    "email-label email-input"
+    "message-label message-label"
+    "message message"
+    "submit submit";
+  gap: 10px 1rem;
+  grid-template-columns: auto 1fr;
+}
+
+#name-label {
+  grid-area: name-label;
+}
+
+#name {
+  grid-area: name-input;
+}
+
+#email-label {
+  grid-area: email-label;
+  min-width: max-content;
+}
+
+#email {
+  grid-area: email-input;
+}
+
+#message-label {
+  grid-area: message-label;
+}
+
+#message {
+  grid-area: message;
+  max-width: 770px;
+}
+
+#contact-submit {
+  grid-area: submit;
+  width: 5em;
+  height: 2em;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+/* Larger than mobile */
+
+@media (min-width: 481px) {
+  /* Submit button aligned left, not center */
+  #contact-submit {
+    margin: 0;
+  }
+}

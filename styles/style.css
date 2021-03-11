@@ -27,6 +27,12 @@ a {
   justify-content: center;
 }
 
+input,
+textarea,
+submit {
+  color: black;
+}
+
 .content-block {
   background-color: #343f41;
   border-radius: 10px;
