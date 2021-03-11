@@ -1,0 +1,59 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Content blocks */
+
+.content-block {
+  margin-top: 1rem;
+  max-width: 1000px;
+}
+
+/* Content block - header */
+
+.content-header {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+}
+
+.author-name {
+  margin-top: 0.5em;
+  font-size: 0.9rem;
+}
+
+.author-details {
+  padding-left: 0.5rem;
+}
+
+.side-img {
+  position: static;
+  display: block;
+  margin: 0 auto 0.2em auto;
+  border-radius: 50%;
+}
+
+.content-details {
+  /* Padding to center text relative to content block (not just its own grid-column) */
+  padding-right: 3.75rem;
+}
+
+/* Content blocks - body */
+
+.content-body {
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-para {
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
+  max-width: 800px;
+  min-width: 225px;
+  flex: 1;
+}
+
+.content-para:nth-child(1) {
+  /* No additional top margin for first paragraph */
+  margin-top: 0.5rem;
+}
