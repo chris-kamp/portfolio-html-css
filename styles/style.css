@@ -167,10 +167,6 @@ footer {
   padding-top: 0.3rem;
 }
 
-/* #pro-links {
-  grid-area: links;
-} */
-
 /* Media queries */
 
 /* Font-size breakpoints */
@@ -241,6 +237,18 @@ footer {
   /* Hide top site nav */
   #site-nav {
     display: none;
+  }
+
+  /* Lay out header with external links only */
+
+  #site-header {
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 80%;
+  }
+
+  #pro-links {
+    width: 40%;
   }
 
   /* Style collapsible nav */
