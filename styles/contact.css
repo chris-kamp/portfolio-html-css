@@ -75,7 +75,7 @@ main {
 
 /* Larger than mobile */
 
-@media (min-width: 481px) {
+@media only screen and (min-width: 481px) {
   /* Submit button aligned left, not center */
   #contact-submit {
     margin: 0;
