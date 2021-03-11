@@ -3,6 +3,14 @@ label {
   min-width: max-content;
 }
 
+ul {
+  line-height: 1.5rem;
+}
+
+li {
+  margin-left: 2rem;
+}
+
 .text-input {
   max-width: 25em;
 }
@@ -15,6 +23,7 @@ label {
   display: flex;
   justify-content: center;
   max-width: 800px;
+  margin-top: 1rem;
 }
 
 #contact-form {
