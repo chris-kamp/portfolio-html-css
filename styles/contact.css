@@ -3,11 +3,11 @@ label {
   min-width: max-content;
 }
 
-ul {
+#contact-details {
   line-height: 1.5rem;
 }
 
-li {
+#contact-details li {
   margin-left: 2rem;
 }
 
