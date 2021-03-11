@@ -15,15 +15,16 @@ label {
   max-width: 25em;
 }
 
-main {
+#details-container {
+  max-width: 800px;
   margin: 0 auto;
 }
 
-#contact-container {
+#form-container {
   display: flex;
   justify-content: center;
   max-width: 800px;
-  margin-top: 1rem;
+  margin: 1rem auto 0 auto;
 }
 
 #contact-form {
