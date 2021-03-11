@@ -1,47 +1,6 @@
-#projects-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-}
-
 .content-block {
   max-width: 1000px;
   margin-top: 1rem;
-}
-
-/* Remove general margin on this class as date should follow without space. */
-.content-title {
-  margin-bottom: 0;
-}
-
-.content-header {
-  margin-bottom: 1rem;
-  position: relative;
-  min-height: 50px;
-}
-
-.tech-logo {
-  position: absolute;
-  left: 0.5rem;
-}
-
-time {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 0.9em;
-}
-
-.project-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-figure {
-  margin: 1rem 0.5rem 0 0.5rem;
-  max-width: 400px;
 }
 
 .content-para {
@@ -49,19 +8,6 @@ figure {
   max-width: 500px;
   min-width: 250px;
   flex: 1;
-}
-
-.project-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-figcaption {
-  font-size: 0.9em;
-  text-align: center;
-  margin-top: 0.2rem;
 }
 
 /* Desktop or larger */
@@ -100,7 +46,7 @@ figcaption {
 /* Tablet-portrait and smaller */
 
 @media only screen and (max-width: 767px) {
-  #about-main .content-block {
+  .content-block {
     margin-top: 1rem;
   }
 }

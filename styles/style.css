@@ -34,19 +34,62 @@ submit {
   color: black;
 }
 
+figure {
+  margin: 1rem 0.5rem 0 0.5rem;
+  max-width: 400px;
+}
+
+figcaption {
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
 .content-block {
   background-color: #343f41;
   border-radius: 10px;
   padding: 1rem;
 }
 
+.content-header {
+  margin-bottom: 1rem;
+  position: relative;
+  /* Min height to fit absolutely-positioned child image */
+  min-height: 50px;
+}
+
+.side-img {
+  position: absolute;
+  left: 0.5rem;
+}
+
 .content-title {
   text-align: center;
-  margin-bottom: 1rem;
+}
+
+.content-date {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.9em;
+}
+
+.content-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .content-para {
+  margin-top: 1rem;
   line-height: 1.2;
+}
+
+.content-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .page-header {
