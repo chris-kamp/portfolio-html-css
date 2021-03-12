@@ -122,6 +122,8 @@ figcaption {
   height: 3rem;
   position: fixed;
   background-color: black;
+  z-index: 1;
+  opacity: 90%;
 }
 
 /* Prevents header from overlapping content at top of page */
