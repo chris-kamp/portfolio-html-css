@@ -33,6 +33,9 @@ h1 {
   padding: 5%;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
 }
 
 #intro-block {
