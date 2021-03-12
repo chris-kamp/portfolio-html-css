@@ -7,12 +7,10 @@ body {
 main {
   flex: 1;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
   padding-bottom: 1rem;
-}
-
-footer {
-  flex: 1;
+  justify-content: center;
+  align-content: center;
 }
 
 h1 {
@@ -44,4 +42,31 @@ h1 {
 
 #intro-block ul {
   padding-left: 3rem;
+}
+
+#profile-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem auto;
+  border: 1px solid black;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+  #profile-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Small tablet */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #profile-img {
+    width: 300px;
+    height: 300px;
+  }
 }
