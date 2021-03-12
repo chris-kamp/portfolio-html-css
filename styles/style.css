@@ -261,12 +261,24 @@ footer {
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
-    background-color: green;
+    background-color: rgb(155, 155, 155);
+    border: 5px solid rgb(44, 44, 44);
+    box-shadow: 3px 3px 5px rgb(44, 44, 44);
+    background-image: url("../imgs/hamburger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
     position: fixed;
     bottom: 5vh;
     right: 10vw;
     z-index: 1;
     transition: bottom 0.3s ease-out, right 0.3s ease-out;
+  }
+
+  #m-nav-toggle:active {
+    background-color: rgb(175, 175, 175);
+    width: 19vw;
+    height: 19vw;
   }
 
   #m-nav {
@@ -286,16 +298,22 @@ footer {
     width: 26vw;
     height: 26vw;
     border-radius: 50%;
-    background-color: yellow;
+    background: radial-gradient(rgb(90, 90, 90), rgb(44, 44, 44));
+    border: 5px solid rgb(44, 44, 44);
+    box-shadow: 3px 3px 5px rgb(44, 44, 44);
     display: inline-flex;
     align-items: center;
     justify-content: center;
   }
 
-  #m-nav-toggle,
+  .m-nav-link:active {
+    background: radial-gradient(rgb(105, 105, 105), rgb(49, 49, 49));
+    width: 25vw;
+    height: 25vw;
+  }
+
   #m-nav-toggle:focus,
   #m-nav-toggle:active {
-    border: none;
     outline: none;
   }
 }
