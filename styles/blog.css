@@ -1,3 +1,8 @@
+/* Links to individual posts will scroll smoothly */
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   display: flex;
 }
@@ -5,14 +10,37 @@ main {
 /* Archive */
 
 #archive {
+  width: 100%;
   background-color: #343f41;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+#post-list {
+  margin-left: 2rem;
+  line-height: 2rem;
+}
+
+#archive-heading {
+  text-align: center;
+  margin: 1rem 0;
 }
 
 /* Content blocks */
 
 .content-block {
   margin-top: 1rem;
+  position: relative;
+}
+
+/* Invisible div positioned above each post. Archive links jump to these anchors so post is not obscured by sticky header. */
+.post-anchor {
+  visibility: hidden;
+  position: absolute;
+  top: -3rem;
 }
 
 /* Content block - header */
@@ -86,18 +114,20 @@ main {
     flex-direction: column;
     align-items: center;
     width: 70%;
+    flex-grow: 1;
     padding: 1rem;
   }
 
   /* Archive */
 
   body {
-    /* Sidebar should be aligned with side of page */
+    /* Archive sidebar should be aligned with side of page */
     margin: 0;
   }
 
   #archive {
     width: 30%;
+    max-width: 25rem;
     height: 100vh;
     position: sticky;
     top: 3rem;
@@ -107,5 +137,12 @@ main {
 
   .content-block:nth-child(1) {
     margin-top: 0;
+  }
+}
+
+/* Disable smooth scroll for users with "prefer reduced motion" browser settings */
+@media only screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
