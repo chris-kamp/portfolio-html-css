@@ -1,7 +1,12 @@
 main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+/* Archive */
+
+#archive {
+  background-color: #343f41;
+  border-radius: 10px;
 }
 
 /* Content blocks */
@@ -56,4 +61,52 @@ main {
 .content-para:nth-child(1) {
   /* No additional top margin for first paragraph */
   margin-top: 0.5rem;
+}
+
+/* Smaller than tablet portrait */
+
+@media only screen and (max-width: 767px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Tablet portrait or larger */
+@media only screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .page-header {
+    width: 100%;
+  }
+
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    padding: 1rem;
+  }
+
+  /* Archive */
+
+  body {
+    /* Sidebar should be aligned with side of page */
+    margin: 0;
+  }
+
+  #archive {
+    width: 30%;
+    height: 100vh;
+    position: sticky;
+    top: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .content-block:nth-child(1) {
+    margin-top: 0;
+  }
 }
