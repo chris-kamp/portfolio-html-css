@@ -73,6 +73,16 @@ label {
   margin: 0 auto;
   font-size: 1rem;
   border-radius: 20px;
+  background: radial-gradient(#5c6673 0%, #343d47 70%, #161d26 95%);
+  color: #e3e3e3;
+}
+
+#contact-submit:active {
+  background: radial-gradient(
+    hsl(214, 11%, 51%) 0%,
+    hsl(212, 15%, 34%) 70%,
+    hsl(214, 27%, 22%) 95%
+  );
 }
 
 /* Larger than mobile */
