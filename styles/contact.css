@@ -28,7 +28,6 @@ label {
 }
 
 #contact-form {
-  color: black;
   display: grid;
   grid-template-areas:
     "name-label name-input"

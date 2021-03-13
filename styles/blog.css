@@ -11,12 +11,12 @@ main {
 
 #archive {
   width: 100%;
-  background-color: #343f41;
-  border-radius: 10px;
+  background-color: #5c6673;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-right: 0.5rem;
+  border-radius: 10px;
 }
 
 #post-list {
@@ -133,6 +133,8 @@ main {
     top: 3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    border-right: 2px solid #a3f3ff;
+    border-radius: 0;
   }
 
   .content-block:nth-child(1) {
