@@ -176,8 +176,21 @@ figcaption {
   padding: 0.2rem;
 }
 
-#pro-links img {
+.pro-link {
+  width: 64px;
+  height: 64px;
+  position: relative;
+}
+
+/* Provides off-white background for transparent logos. Background is clickable due to width and height of anchor specified above. */
+.pro-link:after {
+  content: "";
+  background-color: #e3e3e3;
   border-radius: 50%;
+  z-index: -1;
+  width: 48px;
+  height: 48px;
+  position: absolute;
 }
 
 .link-list {
@@ -228,6 +241,7 @@ footer {
 
   #pro-links {
     width: 40%;
+    padding-top: 32px;
   }
 
   /* Collapsible bottom nav styles */

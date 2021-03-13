@@ -134,6 +134,7 @@ main {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-right: 2px solid #a3f3ff;
+    border-bottom: 2px solid #a3f3ff;
     border-radius: 0;
   }
 
