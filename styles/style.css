@@ -47,7 +47,7 @@ h3 {
 
 em {
   font-style: normal;
-  color: #a3f3ff;
+  color: #99f1ff;
 }
 
 a {
@@ -77,7 +77,7 @@ figcaption {
   font-size: 0.9em;
   text-align: center;
   margin-top: 0.2rem;
-  color: #8ff0ff;
+  color: #99f1ff;
 }
 
 .content-block {
@@ -100,7 +100,7 @@ figcaption {
 
 .content-title {
   text-align: center;
-  color: #8ff0ff;
+  color: #99f1ff;
 }
 
 .content-date {
@@ -108,7 +108,7 @@ figcaption {
   text-align: center;
   margin: 0 auto;
   font-size: 0.9em;
-  color: #8ff0ff;
+  color: #99f1ff;
 }
 
 .content-body {
@@ -402,11 +402,11 @@ footer {
   }
 
   .last {
-    border-right: 2px solid #8ff0ff;
+    border-right: 2px solid #99f1ff;
   }
 
   .first {
-    border-left: 2px solid #8ff0ff;
+    border-left: 2px solid #99f1ff;
   }
 
   .nav-item.current {
@@ -415,7 +415,7 @@ footer {
 
   /* Text within nav-items is colored consistent with <a> tags (required because <a> tags in top nav do not wrap text directly) */
   .nav-item * {
-    color: #8ff0ff;
+    color: #99f1ff;
     font-weight: bold;
     font-family: "Rubik", sans-serif;
   }

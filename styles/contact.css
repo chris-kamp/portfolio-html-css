@@ -67,10 +67,12 @@ label {
 
 #contact-submit {
   grid-area: submit;
-  width: 5em;
-  height: 2em;
+  width: 5rem;
+  height: 2rem;
   font-weight: bold;
   margin: 0 auto;
+  font-size: 1rem;
+  border-radius: 20px;
 }
 
 /* Larger than mobile */
