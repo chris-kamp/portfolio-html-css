@@ -203,7 +203,7 @@ footer {
     display: none;
   }
 
-  /* Lay out fixed header with external links (left) and site nav (right) */
+  /* Fixed header with external links (left) and site nav (right) */
 
   #site-header {
     justify-content: space-between;
@@ -222,7 +222,7 @@ footer {
     margin-right: 1.5rem;
   }
 
-  #site-nav li {
+  .nav-item {
     border: 1px solid #a3f3ff;
     border-top: none;
     border-bottom: none;
@@ -233,14 +233,38 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: #343d47;
+    transition: background-color 0.2s;
   }
 
-  #site-nav .last {
-    border-right: 2px solid #a3f3ff;
+  /* Text within nav-items is colored consistent with <a> tags */
+  .nav-item * {
+    color: #8ff0ff;
   }
 
-  #site-nav .first {
-    border-left: 2px solid #a3f3ff;
+  .nav-item:visited *,
+  .nav-item.current * {
+    color: #e3e3e3;
+    text-decoration-color: #e3e3e3;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(143, 240, 255, 0.3);
+  }
+
+  .nav-item:active {
+    background-color: rgba(143, 240, 255, 0.5);
+  }
+
+  .last {
+    border-right: 2px solid #8ff0ff;
+  }
+
+  .first {
+    border-left: 2px solid #8ff0ff;
+  }
+
+  .nav-item.current {
+    background-color: #161d26;
   }
 }
 
@@ -316,7 +340,8 @@ footer {
     align-items: center;
     justify-content: center;
     /* Override <a> tag color */
-    color: #e3e3e3 !important;
+    color: #e3e3e3;
+    text-decoration-color: #e3e3e3;
   }
 
   .m-nav-link:active {
