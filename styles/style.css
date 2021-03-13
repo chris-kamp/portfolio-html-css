@@ -284,6 +284,7 @@ footer {
     /* Override <a> tag color */
     color: #e3e3e3;
     text-decoration-color: #e3e3e3;
+    font-family: "Rubik", sans-serif;
   }
 
   .m-nav-link:active {
@@ -301,6 +302,22 @@ footer {
   #m-nav-toggle:focus,
   #m-nav-toggle:active {
     outline: none;
+  }
+}
+
+/* Medium-sized mobile only */
+
+@media only screen and (min-width: 360px) and (max-width: 400px) {
+  .m-nav-link {
+    font-size: 1.3em;
+  }
+}
+
+/* Large-sized mobile only */
+
+@media only screen and (min-width: 401px) and (max-width: 480px) {
+  .m-nav-link {
+    font-size: 1.5em;
   }
 }
 
@@ -400,6 +417,7 @@ footer {
   .nav-item * {
     color: #8ff0ff;
     font-weight: bold;
+    font-family: "Rubik", sans-serif;
   }
 
   .nav-item:visited *,
