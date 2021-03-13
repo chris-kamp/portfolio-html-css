@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #161d26;
   min-height: 100vh;
@@ -15,6 +19,20 @@ body {
 
 main {
   padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 2;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 em {
@@ -109,7 +127,6 @@ figcaption {
 
 .page-title {
   color: #a3f3ff;
-  font-size: 4rem;
 }
 
 .center-flex {
@@ -181,102 +198,17 @@ footer {
 
 /* Media queries */
 
-/* Font-size breakpoints */
-
-/* Fits main site nav text on screens >= 320px width (iPhone 5) */
-@media only screen and (max-width: 360px) {
-  #site-nav {
-    font-size: 0.85rem;
-  }
-}
-
-/* Larger than mobile */
-
-@media only screen and (min-width: 481px) {
-  /* Hide mobile nav */
-  #m-nav,
-  #m-nav * {
-    display: none;
-  }
-
-  #m-nav-toggle {
-    display: none;
-  }
-
-  /* Fixed header with external links (left) and site nav (right) */
-
-  #site-header {
-    justify-content: space-between;
-    border-bottom: 2px solid #a3f3ff;
-  }
-
-  #pro-links {
-    flex: 0 1 20%;
-    max-width: 15rem;
-  }
-
-  #site-nav {
-    flex: 1 3 40%;
-    max-width: 40rem;
-    display: flex;
-    margin-right: 1.5rem;
-  }
-
-  .nav-item {
-    border: 1px solid #a3f3ff;
-    border-top: none;
-    border-bottom: none;
-    padding: 0.2rem;
-    flex: 1;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #343d47;
-    transition: background-color 0.2s;
-  }
-
-  /* Text within nav-items is colored consistent with <a> tags */
-  .nav-item * {
-    color: #8ff0ff;
-  }
-
-  .nav-item:visited *,
-  .nav-item.current * {
-    color: #e3e3e3;
-    text-decoration-color: #e3e3e3;
-  }
-
-  .nav-item:hover {
-    background-color: rgba(143, 240, 255, 0.3);
-  }
-
-  .nav-item:active {
-    background-color: rgba(143, 240, 255, 0.5);
-  }
-
-  .last {
-    border-right: 2px solid #8ff0ff;
-  }
-
-  .first {
-    border-left: 2px solid #8ff0ff;
-  }
-
-  .nav-item.current {
-    background-color: #161d26;
-  }
-}
-
-/* Mobile and smaller */
-
+/* Smallest screens (mobile) only */
 @media only screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
   /* Hide top site nav */
   #site-nav {
     display: none;
   }
 
-  /* Lay out header with external links only */
+  /* Top header contains external links only */
 
   #site-header {
     justify-content: center;
@@ -288,13 +220,13 @@ footer {
     width: 40%;
   }
 
-  /* Style collapsible nav */
+  /* Collapsible bottom nav styles */
 
   #m-nav-toggle {
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
-    background-color: #5c6673;
+    background-color: hsl(0, 0%, 75%);
     border: 4px solid #161d26;
     box-shadow: 3px 3px 5px #343d47;
     background-image: url("../imgs/hamburger.svg");
@@ -310,7 +242,7 @@ footer {
 
   #m-nav-toggle:active {
     /* Increase background lighting by 10% on click */
-    background-color: hsl(214, 11%, 51%);
+    background-color: hsl(0, 0%, 85%);
     box-shadow: none;
     width: 19vw;
     height: 19vw;
@@ -359,5 +291,110 @@ footer {
   #m-nav-toggle:focus,
   #m-nav-toggle:active {
     outline: none;
+  }
+}
+
+/* Small screens (narrow tablet) only */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Medium screens (large tablet to laptop/desktop) only */
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Large screens (desktop) only */
+
+@media only screen and (min-width: 1281px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+/* Larger than mobile */
+
+@media only screen and (min-width: 481px) {
+  /* Hide mobile nav */
+  #m-nav,
+  #m-nav * {
+    display: none;
+  }
+
+  #m-nav-toggle {
+    display: none;
+  }
+
+  /* Fixed header with external links (left) and site nav (right) */
+
+  #site-header {
+    justify-content: space-between;
+    border-bottom: 2px solid #a3f3ff;
+  }
+
+  #pro-links {
+    flex: 0 1 20%;
+    max-width: 15rem;
+  }
+
+  #site-nav {
+    flex: 1 3 40%;
+    max-width: 40rem;
+    display: flex;
+    margin-right: 1.5rem;
+  }
+
+  /* Top navbar item styles */
+
+  .nav-item {
+    border: 1px solid #a3f3ff;
+    border-top: none;
+    border-bottom: none;
+    padding: 0.2rem;
+    flex: 1;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #343d47;
+    transition: background-color 0.2s;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(143, 240, 255, 0.3);
+  }
+
+  .nav-item:active {
+    background-color: rgba(143, 240, 255, 0.5);
+  }
+
+  .last {
+    border-right: 2px solid #8ff0ff;
+  }
+
+  .first {
+    border-left: 2px solid #8ff0ff;
+  }
+
+  .nav-item.current {
+    background-color: #161d26;
+  }
+
+  /* Text within nav-items is colored consistent with <a> tags (required because <a> tags in top nav do not wrap text directly) */
+  .nav-item * {
+    color: #8ff0ff;
+    font-weight: bold;
+  }
+
+  .nav-item:visited *,
+  .nav-item.current * {
+    color: #e3e3e3;
+    text-decoration-color: #e3e3e3;
   }
 }

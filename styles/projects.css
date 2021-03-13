@@ -14,9 +14,9 @@ figure {
   flex: 1;
 }
 
-/* Desktop or larger */
+/* Medium+ screens (wide laptop/desktop) and larger */
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .content-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -47,9 +47,9 @@ figure {
   }
 }
 
-/* Tablet-portrait and smaller */
+/* Small screens (narrow tablet) and smaller */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .content-block {
     margin-top: 1rem;
   }
