@@ -9,7 +9,7 @@
   </head>
   <body>
     <header id="site-header">
-      <section id="pro-links">
+      <div id="pro-links">
         <ul class="link-list">
           <li>
             <a
@@ -36,23 +36,23 @@
             /></a>
           </li>
         </ul>
-      </section>
+      </div>
       <nav id="site-nav">
         <ul class="link-list">
-          <a href="index.html" class="nav-item first"><li>HOME</li></a>
-          <span class="nav-item last current"><li>ABOUT</li></span>
-          <a href="contact.html" class="nav-item"><li>CONTACT</li></a>
-          <a href="projects.html" class="nav-item"><li>PROJECTS</li></a>
-          <a href="blog.html" class="nav-item"><li>BLOG</li></a>
+          <li class="nav-item first"><a href="index.html">HOME</a></li>
+          <li class="nav-item current"><span>ABOUT</span></li>
+          <li class="nav-item"><a href="contact.html">CONTACT</a></li>
+          <li class="nav-item"><a href="projects.html">PROJECTS</a></li>
+          <li class="nav-item last"><a href="blog.html">BLOG</a></li>
         </ul>
       </nav>
     </header>
     <div id="header-space" aria-hidden="true"></div>
+    <header class="page-header">
+      <h1 class="page-title">ABOUT</h1>
+    </header>
     <main>
-      <header class="page-header">
-        <h1 class="page-title">ABOUT</h1>
-      </header>
-      <section class="content-section">
+      <div class="content-section">
         <article class="content-block">
           <h3 class="content-title">A BIT ABOUT ME</h3>
           <p class="content-para">
@@ -188,7 +188,7 @@
             </li>
           </ul>
         </article>
-      </section>
+      </div>
     </main>
     <button id="m-nav-toggle"></button>
     <nav id="m-nav">

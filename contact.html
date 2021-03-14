@@ -9,7 +9,7 @@
   </head>
   <body>
     <header id="site-header">
-      <section id="pro-links">
+      <div id="pro-links">
         <ul class="link-list">
           <li>
             <a
@@ -36,14 +36,14 @@
             /></a>
           </li>
         </ul>
-      </section>
+      </div>
       <nav id="site-nav">
         <ul class="link-list">
-          <a href="index.html" class="nav-item first"><li>HOME</li></a>
-          <a href="about.html" class="nav-item"><li>ABOUT</li></a>
-          <span class="nav-item last current"><li>CONTACT</li></span>
-          <a href="projects.html" class="nav-item"><li>PROJECTS</li></a>
-          <a href="blog.html" class="nav-item"><li>BLOG</li></a>
+          <li class="nav-item first"><a href="index.html">HOME</a></li>
+          <li class="nav-item"><a href="about.html">ABOUT</a></li>
+          <li class="nav-item current"><span>CONTACT</span></li>
+          <li class="nav-item"><a href="projects.html">PROJECTS</a></li>
+          <li class="nav-item last"><a href="blog.html">BLOG</a></li>
         </ul>
       </nav>
     </header>
@@ -52,26 +52,26 @@
       <header class="page-header">
         <h1 class="page-title">CONTACT</h1>
       </header>
-      <section class="content-block" id="details-container">
+      <div class="content-block" id="details-container">
         <span>You can reach me: </span>
         <ul id="contact-details">
           <li>By phone, at: <em>01-2345-6789</em></li>
           <li>By email, at: <em>lorem@ipsum.dolor</em></li>
         </ul>
         <span>...or leave a message using the contact form below.</span>
-      </section>
+      </div>
       <!-- Contact form is non-functional -->
-      <section class="content-block" id="form-container">
+      <div class="content-block" id="form-container">
         <form action="#" id="contact-form">
           <label for="name" id="name-label">Name: </label>
           <input type="text" name="name" id="name" class="text-input" />
-          <label for="email" id="email-label" rows="1">Email address: </label>
+          <label for="email" id="email-label">Email address: </label>
           <input type="text" name="email" id="email" class="text-input" />
           <label for="message" id="message-label">Message: </label>
           <textarea name="message" id="message" rows="15" cols="95"></textarea>
           <input type="submit" value="SEND" id="contact-submit" />
         </form>
-      </section>
+      </div>
     </main>
     <button id="m-nav-toggle"></button>
     <nav id="m-nav">

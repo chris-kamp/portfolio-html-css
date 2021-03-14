@@ -9,7 +9,7 @@
   </head>
   <body>
     <header id="site-header">
-      <section id="pro-links">
+      <div id="pro-links">
         <ul class="link-list">
           <li>
             <a
@@ -36,14 +36,14 @@
             /></a>
           </li>
         </ul>
-      </section>
+      </div>
       <nav id="site-nav">
         <ul class="link-list">
-          <a href="index.html" class="nav-item first"><li>HOME</li></a>
-          <a href="about.html" class="nav-item"><li>ABOUT</li></a>
-          <a href="contact.html" class="nav-item"><li>CONTACT</li></a>
-          <span class="nav-item last current"><li>PROJECTS</li></span>
-          <a href="blog.html" class="nav-item"><li>BLOG</li></a>
+          <li class="nav-item first"><a href="index.html">HOME</a></li>
+          <li class="nav-item"><a href="about.html">ABOUT</a></li>
+          <li class="nav-item"><a href="contact.html">CONTACT</a></li>
+          <li class="nav-item current"><span>PROJECTS</span></li>
+          <li class="nav-item last"><a href="blog.html">BLOG</a></li>
         </ul>
       </nav>
     </header>
@@ -52,12 +52,16 @@
       <header class="page-header">
         <h1 class="page-title">PROJECTS</h1>
       </header>
-      <section class="content-section">
+      <div class="content-section">
         <article class="content-block">
           <header class="content-header">
-            <img src="./imgs/ruby-logo-64.png" class="side-img" />
+            <img
+              src="./imgs/ruby-logo-64.png"
+              class="side-img"
+              alt="Logo of the Ruby programming language"
+            />
             <h3 class="content-title">"Mastermind" in Ruby</h3>
-            <time class="content-date">Completed 31 Jan 2021</time>
+            <span class="content-date">Completed 31 Jan 2021</span>
             <span class="project-links-container">
               <a
                 href="https://github.com/chris-kamp/mastermind-rb"
@@ -74,7 +78,7 @@
               >
             </span>
           </header>
-          <section class="content-body">
+          <div class="content-body">
             <div class="text-container">
               <p class="content-para">
                 A version of the classic game "Mastermind", created in Ruby and
@@ -92,13 +96,17 @@
               />
               <figcaption>Command-line "Mastermind" in Ruby</figcaption>
             </figure>
-          </section>
+          </div>
         </article>
         <article class="content-block">
           <header class="content-header">
-            <img src="./imgs/js-logo-64.png" class="side-img" />
+            <img
+              src="./imgs/js-logo-64.png"
+              class="side-img"
+              alt="Stylised letters 'JS' representing JavaScript"
+            />
             <h3 class="content-title">To-do List Website</h3>
-            <time class="content-date">Completed 2 December 2020</time>
+            <span class="content-date">Completed 2 December 2020</span>
             <span class="project-links-container">
               <a
                 href="https://github.com/chris-kamp/todo-list"
@@ -115,7 +123,7 @@
               >
             </span>
           </header>
-          <section class="content-body">
+          <div class="content-body">
             <div class="text-container">
               <p class="content-para">
                 A website that allows users to create to-do lists and store them
@@ -140,13 +148,17 @@
               />
               <figcaption>To-do list website: to-do creation popup</figcaption>
             </figure>
-          </section>
+          </div>
         </article>
         <article class="content-block">
           <header class="content-header">
-            <img src="./imgs/js-logo-64.png" class="side-img" />
+            <img
+              src="./imgs/js-logo-64.png"
+              class="side-img"
+              alt="Stylised letters 'JS' representing JavaScript"
+            />
             <h3 class="content-title">Tic Tac Toe</h3>
-            <time class="content-date">Completed 11 October 2020</time>
+            <span class="content-date">Completed 11 October 2020</span>
             <span class="project-links-container">
               <a
                 href="https://github.com/chris-kamp/tic-tac-toe"
@@ -163,7 +175,7 @@
               >
             </span>
           </header>
-          <section class="content-body">
+          <div class="content-body">
             <div class="text-container">
               <p class="content-para">
                 A web implementation of Tic Tac Toe, built using JavaScript. The
@@ -187,13 +199,17 @@
               />
               <figcaption>JavaScript Tic Tac Toe</figcaption>
             </figure>
-          </section>
+          </div>
         </article>
         <article class="content-block">
           <header class="content-header">
-            <img src="./imgs/js-logo-64.png" class="side-img" />
+            <img
+              src="./imgs/js-logo-64.png"
+              class="side-img"
+              alt="Stylised letters 'JS' representing JavaScript"
+            />
             <h3 class="content-title">Calculator</h3>
-            <time class="content-date">Completed 20 September 2020</time>
+            <span class="content-date">Completed 20 September 2020</span>
             <span class="project-links-container">
               <a
                 href="https://github.com/chris-kamp/calculator"
@@ -210,7 +226,7 @@
               >
             </span>
           </header>
-          <section class="content-body">
+          <div class="content-body">
             <div class="text-container">
               <p class="content-para">
                 A simple calculator application built using JavaScript. The
@@ -226,9 +242,9 @@
               />
               <figcaption>JavaScript calculator</figcaption>
             </figure>
-          </section>
+          </div>
         </article>
-      </section>
+      </div>
     </main>
     <button id="m-nav-toggle"></button>
     <nav id="m-nav">
