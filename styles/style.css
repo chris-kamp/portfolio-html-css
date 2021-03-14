@@ -262,6 +262,7 @@ footer {
     right: 10vw;
     z-index: 1;
     transition: bottom 0.3s ease-out, right 0.3s ease-out;
+    color: rgba(255, 255, 255, 0);
   }
 
   #m-nav-toggle:active {
