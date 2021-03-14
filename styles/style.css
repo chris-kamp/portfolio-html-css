@@ -317,6 +317,11 @@ footer {
   #m-nav-toggle:active {
     outline: none;
   }
+
+  /* Space to prevent hamburger menu from obscuring content at full scroll */
+  footer {
+    margin-bottom: 30vw;
+  }
 }
 
 /* Medium-sized mobile only */
